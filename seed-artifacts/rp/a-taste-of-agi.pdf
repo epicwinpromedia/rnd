@@ -1,0 +1,63 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2554 >>
+stream
+BT /F2 9 Tf 54 740 Td (EPIC WIN R&D // CANONICAL RESEARCH PAPER \(V1\)) Tj ET
+BT /F2 20 Tf 54 722 Td (A Taste of AGI!?) Tj ET
+BT /F1 12 Tf 54 698 Td (Primary-Source Forensic Audit of Frontier Agentic Capability vs.) Tj ET
+BT /F1 12 Tf 54 682 Td (Generative Theater) Tj ET
+BT /F1 9 Tf 54 666 Td (Bryan Lee Harris | EPIC WIN Pro Media | 2026-11-05) Tj ET
+BT /F2 10 Tf 54 644 Td (ABSTRACT) Tj ET
+BT /F1 10 Tf 54 630 Td (Stripping away keynote hype, what actually differentiates a genuinely useful agentic) Tj ET
+BT /F1 10 Tf 54 617 Td (system from an impressive demo? Through primary-source forensics, we show that durable) Tj ET
+BT /F1 10 Tf 54 604 Td (agentic workflows depend on standard tool contracts \(MCP + WebMCP\), sandboxed execution,) Tj ET
+BT /F1 10 Tf 54 591 Td (and machine-readable web infrastructure.) Tj ET
+BT /F2 10 Tf 54 570 Td (KEY RECEIPT) Tj ET
+BT /F1 10 Tf 54 556 Td (Combining server-side EmDash MCP, browser-side WebMCP \(document.modelContext\), and R2) Tj ET
+BT /F1 10 Tf 54 543 Td (Markdown negotiation turns any publication into a verifiable agentic surface.) Tj ET
+BT /F2 11 Tf 54 520 Td (1. Beyond the Demo Reel) Tj ET
+BT /F1 10 Tf 54 505 Td (Spectacle demos succeed in controlled videos and fail on real enterprise workflows) Tj ET
+BT /F1 10 Tf 54 492 Td (because they rely on fragile DOM scraping and unguarded permissions. Real capability) Tj ET
+BT /F1 10 Tf 54 479 Td (requires explicit tool schemas, read-only vs. consequential annotations, and clean) Tj ET
+BT /F1 10 Tf 54 466 Td (failure recovery.) Tj ET
+BT /F2 11 Tf 54 445 Td (2. The Three-Layer Agentic Stack) Tj ET
+BT /F1 10 Tf 54 430 Td (Production agentic readiness spans three interlocking layers: \(1\) Server MCP for) Tj ET
+BT /F1 10 Tf 54 417 Td (structured backend queries with Zero Trust write protection, \(2\) Browser WebMCP for) Tj ET
+BT /F1 10 Tf 54 404 Td (in-tab state transitions, and \(3\) Content-negotiated Markdown for Agents so crawlers and) Tj ET
+BT /F1 10 Tf 54 391 Td (assistants consume clean prose at the edge.) Tj ET
+BT /F2 11 Tf 54 370 Td (3. Trust as the Ultimate Moat) Tj ET
+BT /F1 10 Tf 54 355 Td (As inference becomes a commodity, trust-cryptographic, architectural, and) Tj ET
+BT /F1 10 Tf 54 342 Td (editorial-becomes the moat. Organizations that pair open standards with verifiable) Tj ET
+BT /F1 10 Tf 54 329 Td (infrastructure win both the developer mindshare and the enterprise boardroom.) Tj ET
+BT /F1 8 Tf 54 42 Td (Canonical: https://rnd.epicwinpromedia.com/rp/a-taste-of-agi | Unlisted \(noindex, nofollow, noarchive\)) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000002857 00000 n 
+0000002927 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3002
+%%EOF

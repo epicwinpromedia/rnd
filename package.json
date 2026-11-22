@@ -1,0 +1,29 @@
+{
+  "name": "rnd-doc-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Canonical Multi-Format Research Paper & Essay Server (rnd.epicwinpromedia.com) — Cloudflare Workers + R2 Content Negotiation",
+  "scripts": {
+    "dev": "cf dev",
+    "build": "cf build",
+    "deploy": "cf deploy",
+    "generate:seed": "node scripts/generate-seed.mjs",
+    "test": "node --test test/worker.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "2.0.0-rc.3",
+    "@cloudflare/workers-types": "^5.20261121.1",
+    "cf": "^1.0.0-rc.2",
+    "typescript": "^5.9.0",
+    "vite": "^8.3.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "workerd",
+      "esbuild",
+      "sharp"
+    ]
+  }
+}

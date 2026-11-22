@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <link rel="canonical" href="https://rnd.epicwinpromedia.com/rp/resolution-is-not-leverage">
+  <link rel="alternate" type="text/markdown" href="https://rnd.epicwinpromedia.com/rp/resolution-is-not-leverage.md">
+  <link rel="alternate" type="application/pdf" href="https://rnd.epicwinpromedia.com/rp/resolution-is-not-leverage.pdf">
+  <link rel="alternate" type="application/ld+json" href="https://rnd.epicwinpromedia.com/rp/resolution-is-not-leverage.jsonld">
+  <title>Resolution Is Not Leverage — Bryan Lee Harris</title>
+  <style>
+    :root { color-scheme: dark; --bg: #151414; --surface: #1F1F1F; --ink: #F0E3DE; --muted: #9A9390; --accent: #FF5E1F; --teal: #00CCBB; --line: #333130; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+    header, main, footer { max-width: 52rem; margin-inline: auto; padding: 2rem 1.5rem; }
+    header { border-bottom: 1px solid var(--line); }
+    p.eyebrow { font-family: ui-monospace, monospace; font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 0.75rem; }
+    h1 { font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 500; letter-spacing: -0.025em; line-height: 1.05; margin: 0 0 0.75rem; }
+    p.subtitle { font-size: 1.15rem; color: var(--muted); margin: 0 0 1rem; }
+    p.meta { font-family: ui-monospace, monospace; font-size: 0.8rem; color: var(--muted); margin: 0; }
+    aside.receipt { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+    aside.receipt p { margin: 0.35rem 0 0; }
+    section { margin: 2rem 0; }
+    h2 { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; margin: 0 0 0.75rem; }
+    nav.formats { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+    nav.formats a { font-family: ui-monospace, monospace; font-size: 0.8rem; color: var(--ink); text-decoration: none; border: 1px solid var(--line); padding: 0.35rem 0.85rem; border-radius: 9999px; }
+    nav.formats a:hover { border-color: var(--accent); color: var(--accent); }
+    footer { border-top: 1px solid var(--line); font-family: ui-monospace, monospace; font-size: 0.8rem; color: var(--muted); }
+    footer a { color: var(--teal); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">EPIC WIN R&amp;D · CANONICAL RESEARCH PAPER · V1</p>
+    <h1>Resolution Is Not Leverage</h1>
+    <p class="subtitle">Why Raw Model Scale Fails Without Deterministic Architectural Boundaries</p>
+    <p class="meta">Bryan Lee Harris · EPIC WIN Pro Media · 2026-09-15</p>
+    <nav class="formats" aria-label="Alternate formats">
+      <a href="/rp/resolution-is-not-leverage.md">Markdown (.md)</a>
+      <a href="/rp/resolution-is-not-leverage.pdf">PDF (.pdf)</a>
+      <a href="/rp/resolution-is-not-leverage.jsonld">JSON-LD (.jsonld)</a>
+      <a href="/">All Papers</a>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p>Enterprise AI programs routinely conflate higher parameter density and longer context windows with operational leverage. Primary-source engineering analysis demonstrates that leverage comes from deterministic routing, capability-scoped interfaces, and strict boundary hygiene—not brute-force inference resolution.</p>
+    </section>
+    <aside class="receipt" aria-label="Key receipt">
+      <p class="eyebrow">KEY RECEIPT</p>
+      <p>Replacing an unbounded generative loop with a deterministic System 1 router (@cf/cloudflare/clef-flash) cuts tail latency by &gt;85% while eliminating unverified prose.</p>
+    </aside>
+    <section aria-labelledby="sec-1">
+      <h2 id="sec-1">1. The Resolution Fallacy</h2>
+      <p>When an organization struggles to turn AI pilots into production workflows, the default reflex is to buy higher resolution: bigger frontier models, wider context windows, and looser prompts. In video engineering, 8K raw footage with bad lighting and no story structure is still unusable; in AI systems, 1M-token context windows with undefined authority boundaries only scale failure faster.</p>
+    </section>
+    <section aria-labelledby="sec-2">
+      <h2 id="sec-2">2. Leverage Lives at the Boundary</h2>
+      <p>True leverage is structural. Cloudflare's 2026 Unified Edge Fabric proves this principle in production: Workers isolate execution at the edge, AI Gateway enforces deterministic rate limits and caching, and open-weight System 1 classifiers like @cf/cloudflare/clef-flash resolve intent before expensive reasoning is ever invoked.</p>
+    </section>
+    <section aria-labelledby="sec-3">
+      <h2 id="sec-3">3. Implications for Executive Storytelling &amp; Platform Positioning</h2>
+      <p>Developers immediately spot hand-waving; CFOs immediately spot unmeasured burn. Technical positioning succeeds when it replaces vague claims of 'AI magic' with verifiable receipts: exact latency budgets, deterministic routing schemas, and reproducible architectures.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Served directly from Cloudflare R2 (<code>epicwin-rnd-docs</code>) with <code>Vary: Accept</code> · <a href="https://cf.epicwinpromedia.com">Return to Portfolio Portal</a></p>
+  </footer>
+</body>
+</html>

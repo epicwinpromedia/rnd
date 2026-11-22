@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <link rel="canonical" href="https://rnd.epicwinpromedia.com/rp/run-time-vs-dev-time">
+  <link rel="alternate" type="text/markdown" href="https://rnd.epicwinpromedia.com/rp/run-time-vs-dev-time.md">
+  <link rel="alternate" type="application/pdf" href="https://rnd.epicwinpromedia.com/rp/run-time-vs-dev-time.pdf">
+  <link rel="alternate" type="application/ld+json" href="https://rnd.epicwinpromedia.com/rp/run-time-vs-dev-time.jsonld">
+  <title>Run Time vs. Dev Time — Bryan Lee Harris</title>
+  <style>
+    :root { color-scheme: dark; --bg: #151414; --surface: #1F1F1F; --ink: #F0E3DE; --muted: #9A9390; --accent: #FF5E1F; --teal: #00CCBB; --line: #333130; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+    header, main, footer { max-width: 52rem; margin-inline: auto; padding: 2rem 1.5rem; }
+    header { border-bottom: 1px solid var(--line); }
+    p.eyebrow { font-family: ui-monospace, monospace; font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin: 0 0 0.75rem; }
+    h1 { font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 500; letter-spacing: -0.025em; line-height: 1.05; margin: 0 0 0.75rem; }
+    p.subtitle { font-size: 1.15rem; color: var(--muted); margin: 0 0 1rem; }
+    p.meta { font-family: ui-monospace, monospace; font-size: 0.8rem; color: var(--muted); margin: 0; }
+    aside.receipt { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 1.25rem 1.5rem; margin: 1.5rem 0; }
+    aside.receipt p { margin: 0.35rem 0 0; }
+    section { margin: 2rem 0; }
+    h2 { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.02em; margin: 0 0 0.75rem; }
+    nav.formats { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+    nav.formats a { font-family: ui-monospace, monospace; font-size: 0.8rem; color: var(--ink); text-decoration: none; border: 1px solid var(--line); padding: 0.35rem 0.85rem; border-radius: 9999px; }
+    nav.formats a:hover { border-color: var(--accent); color: var(--accent); }
+    footer { border-top: 1px solid var(--line); font-family: ui-monospace, monospace; font-size: 0.8rem; color: var(--muted); }
+    footer a { color: var(--teal); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">EPIC WIN R&amp;D · CANONICAL RESEARCH PAPER · V1</p>
+    <h1>Run Time vs. Dev Time</h1>
+    <p class="subtitle">Collapsing the Impedance Mismatch Between Authoring Semantics and Global Edge Execution</p>
+    <p class="meta">Bryan Lee Harris · EPIC WIN Pro Media · 2026-10-02</p>
+    <nav class="formats" aria-label="Alternate formats">
+      <a href="/rp/run-time-vs-dev-time.md">Markdown (.md)</a>
+      <a href="/rp/run-time-vs-dev-time.pdf">PDF (.pdf)</a>
+      <a href="/rp/run-time-vs-dev-time.jsonld">JSON-LD (.jsonld)</a>
+      <a href="/">All Papers</a>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p>Modern web stacks accumulate layers of build-time abstraction that obscure what actually executes at request time. By pairing semantic HTML5, native CSS state machines (:has()), and edge-native SSR on Cloudflare Workers + EmDash 1.0, teams collapse middleware tax and ship systems whose dev-time mental model matches their run-time reality.</p>
+    </section>
+    <aside class="receipt" aria-label="Key receipt">
+      <p class="eyebrow">KEY RECEIPT</p>
+      <p>A zero-&lt;div&gt;, zero-Tailwind Astro SSR portal on EmDash 1.0 + D1 + KV + R2 ships &lt;5 KB of vanilla JS while delivering sub-50ms edge personalization.</p>
+    </aside>
+    <section aria-labelledby="sec-1">
+      <h2 id="sec-1">1. The Middleware Tax</h2>
+      <p>Over the past decade, web architecture drifted toward shipping megabytes of client-side hydration machinery just to toggle tabs, open modals, or filter lists. Every abstraction layer widens the gap between what a developer writes and what the browser and network execute.</p>
+    </section>
+    <section aria-labelledby="sec-2">
+      <h2 id="sec-2">2. Edge SSR + Native Platform Primitives</h2>
+      <p>Cloudflare Workers, D1, R2, and KV move data and compute to the network edge. On the client, Baseline web primitives—:has(), &lt;details name&gt;, &lt;dialog closedby='any'&gt;, @view-transition, and WebMCP—handle interactive state natively without framework sprawl.</p>
+    </section>
+    <section aria-labelledby="sec-3">
+      <h2 id="sec-3">3. Co-Equal Citizens: Humans and Agents</h2>
+      <p>When the run-time surface is clean semantic HTML paired with content-negotiated Markdown (text/markdown) and structured MCP/WebMCP tools, both human readers and AI agents inspect the exact same source of truth with zero scraping fragility.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Served directly from Cloudflare R2 (<code>epicwin-rnd-docs</code>) with <code>Vary: Accept</code> · <a href="https://cf.epicwinpromedia.com">Return to Portfolio Portal</a></p>
+  </footer>
+</body>
+</html>

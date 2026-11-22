@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "A Taste of AGI!?",
+  "alternativeHeadline": "Primary-Source Forensic Audit of Frontier Agentic Capability vs. Generative Theater",
+  "description": "Stripping away keynote hype, what actually differentiates a genuinely useful agentic system from an impressive demo? Through primary-source forensics, we show that durable agentic workflows depend on standard tool contracts (MCP + WebMCP), sandboxed execution, and machine-readable web infrastructure.",
+  "author": {
+    "@type": "Person",
+    "name": "Bryan Lee Harris",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "EPIC WIN Pro Media"
+    }
+  },
+  "datePublished": "2026-11-05",
+  "url": "https://rnd.epicwinpromedia.com/rp/a-taste-of-agi",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "EPIC WIN R&D Canonical Archive",
+    "url": "https://rnd.epicwinpromedia.com/"
+  },
+  "encoding": [
+    {
+      "@type": "MediaObject",
+      "encodingFormat": "text/html",
+      "contentUrl": "https://rnd.epicwinpromedia.com/rp/a-taste-of-agi.html"
+    },
+    {
+      "@type": "MediaObject",
+      "encodingFormat": "text/markdown",
+      "contentUrl": "https://rnd.epicwinpromedia.com/rp/a-taste-of-agi.md"
+    },
+    {
+      "@type": "MediaObject",
+      "encodingFormat": "application/pdf",
+      "contentUrl": "https://rnd.epicwinpromedia.com/rp/a-taste-of-agi.pdf"
+    },
+    {
+      "@type": "MediaObject",
+      "encodingFormat": "application/ld+json",
+      "contentUrl": "https://rnd.epicwinpromedia.com/rp/a-taste-of-agi.jsonld"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 2540 >>
+stream
+BT /F2 9 Tf 54 740 Td (EPIC WIN R&D // CANONICAL RESEARCH PAPER \(V1\)) Tj ET
+BT /F2 20 Tf 54 722 Td (Run Time vs. Dev Time) Tj ET
+BT /F1 12 Tf 54 698 Td (Collapsing the Impedance Mismatch Between Authoring Semantics and Global) Tj ET
+BT /F1 12 Tf 54 682 Td (Edge Execution) Tj ET
+BT /F1 9 Tf 54 666 Td (Bryan Lee Harris | EPIC WIN Pro Media | 2026-10-02) Tj ET
+BT /F2 10 Tf 54 644 Td (ABSTRACT) Tj ET
+BT /F1 10 Tf 54 630 Td (Modern web stacks accumulate layers of build-time abstraction that obscure what actually) Tj ET
+BT /F1 10 Tf 54 617 Td (executes at request time. By pairing semantic HTML5, native CSS state machines \(:has\(\)\),) Tj ET
+BT /F1 10 Tf 54 604 Td (and edge-native SSR on Cloudflare Workers + EmDash 1.0, teams collapse middleware tax) Tj ET
+BT /F1 10 Tf 54 591 Td (and ship systems whose dev-time mental model matches their run-time reality.) Tj ET
+BT /F2 10 Tf 54 570 Td (KEY RECEIPT) Tj ET
+BT /F1 10 Tf 54 556 Td (A zero-<div>, zero-Tailwind Astro SSR portal on EmDash 1.0 + D1 + KV + R2 ships <5 KB of) Tj ET
+BT /F1 10 Tf 54 543 Td (vanilla JS while delivering sub-50ms edge personalization.) Tj ET
+BT /F2 11 Tf 54 520 Td (1. The Middleware Tax) Tj ET
+BT /F1 10 Tf 54 505 Td (Over the past decade, web architecture drifted toward shipping megabytes of client-side) Tj ET
+BT /F1 10 Tf 54 492 Td (hydration machinery just to toggle tabs, open modals, or filter lists. Every abstraction) Tj ET
+BT /F1 10 Tf 54 479 Td (layer widens the gap between what a developer writes and what the browser and network) Tj ET
+BT /F1 10 Tf 54 466 Td (execute.) Tj ET
+BT /F2 11 Tf 54 445 Td (2. Edge SSR + Native Platform Primitives) Tj ET
+BT /F1 10 Tf 54 430 Td (Cloudflare Workers, D1, R2, and KV move data and compute to the network edge. On the) Tj ET
+BT /F1 10 Tf 54 417 Td (client, Baseline web primitives-:has\(\), <details name>, <dialog closedby='any'>,) Tj ET
+BT /F1 10 Tf 54 404 Td (@view-transition, and WebMCP-handle interactive state natively without framework sprawl.) Tj ET
+BT /F2 11 Tf 54 383 Td (3. Co-Equal Citizens: Humans and Agents) Tj ET
+BT /F1 10 Tf 54 368 Td (When the run-time surface is clean semantic HTML paired with content-negotiated Markdown) Tj ET
+BT /F1 10 Tf 54 355 Td (\(text/markdown\) and structured MCP/WebMCP tools, both human readers and AI agents) Tj ET
+BT /F1 10 Tf 54 342 Td (inspect the exact same source of truth with zero scraping fragility.) Tj ET
+BT /F1 8 Tf 54 42 Td (Canonical: https://rnd.epicwinpromedia.com/rp/run-time-vs-dev-time | Unlisted \(noindex, nofollow, noarchive\)) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000002843 00000 n 
+0000002913 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2988
+%%EOF
