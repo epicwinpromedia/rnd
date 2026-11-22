@@ -23,7 +23,7 @@ for file in seed-artifacts/rp/*; do
     *)        ct="application/octet-stream" ;;
   esac
   echo "  -> Uploading ${key} (${ct})"
-  cf r2 objects put "${BUCKET}/${key}" --file "${file}" --content-type "${ct}"
+  cf r2 objects put "${key}" --bucket-name "${BUCKET}" --file "${file}" --content-type "${ct}"
 done
 
 echo "4/4 Deploying rnd-doc-server Worker + Custom Domains..."
