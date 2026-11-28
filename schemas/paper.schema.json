@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rnd.epicwinpromedia.com/schemas/paper.schema.json",
+  "title": "EPIC WIN R&D Research Paper",
+  "description": "Schema for research papers (schema.org ScholarlyArticle). Papers must list at least one supporting artifact (D13).",
+  "allOf": [
+    {
+      "$ref": "https://rnd.epicwinpromedia.com/schemas/work.schema.json"
+    }
+  ],
+  "required": [
+    "artifacts"
+  ],
+  "properties": {
+    "type": {
+      "const": "paper"
+    },
+    "artifacts": {
+      "minItems": 1
+    }
+  }
+}
