@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rnd.epicwinpromedia.com/schemas/essay.schema.json",
+  "title": "EPIC WIN R&D Essay",
+  "description": "Schema for essays (schema.org Article + genre: essay). Essays must not declare supporting research artifacts (D13).",
+  "allOf": [
+    {
+      "$ref": "https://rnd.epicwinpromedia.com/schemas/work.schema.json"
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "essay"
+    },
+    "artifacts": {
+      "maxItems": 0
+    }
+  },
+  "not": {
+    "required": [
+      "artifacts"
+    ],
+    "properties": {
+      "artifacts": {
+        "minItems": 1
+      }
+    }
+  }
+}

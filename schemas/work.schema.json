@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://rnd.epicwinpromedia.com/schemas/work.schema.json",
+  "title": "EPIC WIN R&D Work Snapshot",
+  "description": "Canonical base schema for every published work on rnd.epicwinpromedia.com. Extended by essay.schema.json and paper.schema.json.",
+  "type": "object",
+  "required": [
+    "slug",
+    "type",
+    "title",
+    "authors",
+    "datePublished",
+    "version",
+    "status",
+    "abstract",
+    "body",
+    "license",
+    "copyrightHolder",
+    "inLanguage"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Kebab-case permanent identifier unique across all work types (D14)."
+    },
+    "type": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$",
+      "description": "Open enum work type (built-in: essay, paper)."
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subtitle": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "orcid": {
+            "type": "string",
+            "pattern": "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "alternateName": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "sameAs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      }
+    },
+    "datePublished": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "ISO date of first public release anywhere (D15)."
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "preprint",
+        "under-review",
+        "peer-reviewed",
+        "withdrawn"
+      ],
+      "description": "Publication status (D2)."
+    },
+    "venue": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Required when status is peer-reviewed (D2)."
+    },
+    "series": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "abstract": {
+      "type": "string",
+      "minLength": 1
+    },
+    "body": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Markdown body of the work alone (D17)."
+    },
+    "buildsOn": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "cites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "url",
+          "description"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "dataset",
+              "code",
+              "proof",
+              "materials"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "openProblems": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "mirrors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "platform",
+          "url"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "platform": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "license": {
+      "type": "string",
+      "format": "uri",
+      "default": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    },
+    "copyrightHolder": {
+      "type": "object",
+      "required": [
+        "type",
+        "name"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "Person",
+            "Organization"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "identifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "doi": {
+          "type": "string",
+          "minLength": 1
+        },
+        "arxiv": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "thumbnail": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inLanguage": {
+      "type": "string",
+      "pattern": "^[a-zA-Z]{2,3}(?:-[a-zA-Z0-9]{2,8})*$",
+      "default": "en"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "versionUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "dateModified": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "copyrightYear": {
+      "type": "integer",
+      "minimum": 1970
+    },
+    "contentHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "template": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "object",
+      "required": [
+        "@type",
+        "name",
+        "url"
+      ],
+      "properties": {
+        "@type": {
+          "const": "Organization"
+        },
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "peer-reviewed"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "required": [
+          "venue"
+        ]
+      }
+    }
+  ]
+}
